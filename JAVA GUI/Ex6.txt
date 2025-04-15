@@ -1,0 +1,1 @@
+Serve para adicionar barras de rolagem a area do texto.
