@@ -1,0 +1,48 @@
+1. Action Listener
+
+Usado para responder açoes como cliques de botoes ou seleçao de itens.
+
+Ex:
+
+JButton botao = new JButton("Clicar");
+
+botao.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent e) {
+        Sysout("botao clicado")
+    }
+})
+
+
+2. Key Listener
+
+Usado para responder açoes como cliques de teclado.
+
+Ex:
+
+JTextField txt = new JTextField();
+
+campoTexto.addKeyListener(new KeyListener() {
+    public void keyTyped(KeyEvent e) {
+        Sysout("digitada: " + e.getKeyChar());
+    }
+
+    public void keyPressed(KeyEvent e) {
+        Sysout("pressionada: " + e.getKeyChar());
+    }
+
+    public void keyRelease(KeyEvent e) {
+        Sysout("liberada: " + e.getKeyChar());
+    }
+});
+
+3. Mouse Listener 
+
+Usado para responder açoes como cliques do mouse.
+
+JLabel label = new JLabel("teste");
+
+label.addMouseListener(new MouseListener() {
+    public void mouseClicked(MouseEvent e) {
+        Sysout("mouse clicado")
+    }
+});

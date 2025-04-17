@@ -1,0 +1,12 @@
+Listener: interface para reagir a eventos.
+Adapter: classe abstrata que implementa métodos da interface listener com corpo vazio.
+
+
+No caso do Listener, é necessário implementar todos os métodos da interface, mesmo que estiver usando apenas 1. No caso do adapter, que se torna mais limpo,
+pode herdar da classe e sobrescrever apenas o método que estiver utilizando no momento, sem a necessidade de implementar todos.
+
+Exemplo:
+
+Listener: ActionListener
+
+Adapter: MouseAdapter, KeyAdapter
