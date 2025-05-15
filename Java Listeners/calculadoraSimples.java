@@ -65,7 +65,7 @@ public class calculadoraSimples implements ActionListener {
 
                 resultado.setText("= " + result);
             } catch (NumberFormatException ex) {
-                resultado.setText("Erro: Entrada inválida");
+                resultado.setText("entrada inválida");
             } catch (ArithmeticException ex) {
                 resultado.setText("Erro: " + ex.getMessage());
             }
